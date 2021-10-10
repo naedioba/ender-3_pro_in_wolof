@@ -1,0 +1,10 @@
+- Le fichier "language_wo.h" se trouve dans le dossier \Marlin\src\lcd\language\
+
+- Le fichier "langdata_wo.h" se trouve dans le dossier \Marlin\src\lcd\dogm\fontdata\
+
+- Les fichiers suivants se trouvent dans le dossier \Marlin\src\lcd\extui\mks_ui\
+ 	"tft_multi_language.h" se trouve
+	"tft_multi_language.cpp"
+	"pic_manager.cpp"
+	"draw_language.cpp" 
+	"tft_Language_fr"
