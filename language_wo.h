@@ -40,6 +40,7 @@ namespace Language_wo {
   constexpr uint8_t CHARSIZE              = 2;
   LSTR LANGUAGE                           = _UxGT("Wolof");
 
+   // These strings should be translated
   LSTR WELCOME_MSG                        = MACHINE_NAME _UxGT(" pare na");
   LSTR MSG_YES                            = _UxGT("Waaw");
   LSTR MSG_NO                             = _UxGT("Déedéet ");
@@ -48,9 +49,11 @@ namespace Language_wo {
   LSTR MSG_MEDIA_INSERTED                 = _UxGT("SD bi dugg na");
   LSTR MSG_MEDIA_REMOVED                  = _UxGT("SD bi gennë");
   LSTR MSG_MEDIA_WAITING                  = _UxGT("Maa ngi xaar SD");
+  LSTR MSG_SD_INIT_FAIL                   = _UxGT("SD bu ubbéekuwul");
   LSTR MSG_MEDIA_READ_ERROR               = _UxGT("SD bi baaxul");
   LSTR MSG_MEDIA_USB_REMOVED              = _UxGT("Dakkal na ñu USB bi");
   LSTR MSG_MEDIA_USB_FAILED               = _UxGT("USB bi doxul");
+  LSTR MSG_KILL_SUBCALL_OVERFLOW          = _UxGT("Subcall Overflow");
   LSTR MSG_LCD_ENDSTOPS                   = _UxGT("Taxawal");
   LSTR MSG_LCD_SOFT_ENDSTOPS              = _UxGT("Taxawal yu nooy");
   LSTR MSG_MAIN                           = _UxGT("Alluwa bu jiitu");
@@ -68,7 +71,18 @@ namespace Language_wo {
   LSTR MSG_AUTO_HOME_I                    = _UxGT("Delloo ") LCD_STR_I _UxGT(" boppam");
   LSTR MSG_AUTO_HOME_J                    = _UxGT("Delloo ") LCD_STR_J _UxGT(" boppam");
   LSTR MSG_AUTO_HOME_K                    = _UxGT("Delloo ") LCD_STR_K _UxGT(" boppam");
+  LSTR MSG_FILAMENT_SET                   = _UxGT("Tërallini buum");
+  LSTR MSG_FILAMENT_MAN                   = _UxGT("Caytukaayu buum ");
+  LSTR MSG_LEVBED_FL                      = _UxGT("Ci kanam ci cammooñ");
+  LSTR MSG_LEVBED_FR                      = _UxGT("Ci kanam ci ndeyjoor");
+  LSTR MSG_LEVBED_C                       = _UxGT("Ci digg bi");
+  LSTR MSG_LEVBED_BL                      = _UxGT("Ci ginnaaw ci cammooñ");
+  LSTR MSG_LEVBED_BR                      = _UxGT("Ci ginnaaw ci ndeyjoor");
+  LSTR MSG_MANUAL_MESH                    = _UxGT("Rabbu loxo");
   LSTR MSG_AUTO_Z_ALIGN                   = _UxGT("Z féeteel boppam");
+  LSTR MSG_ITERATION                      = _UxGT("Baamtu G34: %i");
+  LSTR MSG_DECREASING_ACCURACY            = _UxGT("Wéraay gaa ngi wañi ku");
+  LSTR MSG_ACCURACY_ACHIEVED              = _UxGT("Wéraay gi mat na");
   LSTR MSG_LEVEL_BED_HOMING               = _UxGT("Dellu ci kër yëpp XYZ...");
   LSTR MSG_LEVEL_BED_WAITING              = _UxGT("Cuqal ngir tambali");
   LSTR MSG_LEVEL_BED_NEXT_POINT           = _UxGT("Tomb bi ci topp");
@@ -105,8 +119,21 @@ namespace Language_wo {
   #endif
   LSTR MSG_PREHEAT_CUSTOM                 = _UxGT("Tangal ci sama coobare");
   LSTR MSG_COOLDOWN                       = _UxGT("Seddal");
+
+  LSTR MSG_CUTTER_FREQUENCY               = _UxGT("Baraay");
   LSTR MSG_LASER_MENU                     = _UxGT("Saytu Laser");
+  LSTR MSG_SPINDLE_MENU                   = _UxGT("Saytu sampukaay");
   LSTR MSG_LASER_POWER                    = _UxGT("Kattan");
+  LSTR MSG_SPINDLE_POWER                  = _UxGT("Kattanu sampukaay");
+  LSTR MSG_LASER_TOGGLE                   = _UxGT("Wëlbati Laser");
+  LSTR MSG_LASER_EVAC_TOGGLE              = _UxGT("Wëlbati ëffukaay");
+  LSTR MSG_LASER_ASSIST_TOGGLE            = _UxGT("Jappalewaay ngelaw");
+  LSTR MSG_LASER_PULSE_MS                 = _UxGT("Test Pulse ms");
+  LSTR MSG_LASER_FIRE_PULSE               = _UxGT("Fire Pulse");
+  LSTR MSG_FLOWMETER_FAULT                = _UxGT("Coolant Flow Fault");
+  LSTR MSG_SPINDLE_TOGGLE                 = _UxGT("Toggle Spindle");
+  LSTR MSG_SPINDLE_EVAC_TOGGLE            = _UxGT("Toggle Vacuum");
+  LSTR MSG_SPINDLE_FORWARD                = _UxGT("Spindle Forward");
   LSTR MSG_SPINDLE_REVERSE                = _UxGT("Juutal sampukaay yi");
   LSTR MSG_SWITCH_PS_ON                   = _UxGT("Taal mbëj mi");
   LSTR MSG_SWITCH_PS_OFF                  = _UxGT("Fey mbëj mi");
@@ -118,9 +145,12 @@ namespace Language_wo {
   LSTR MSG_BED_TRAMMING                   = _UxGT("Kawewaayu ruqu yi");
   LSTR MSG_BED_TRAMMING_RAISE             = _UxGT("Yëkkëti ruqu wi ba si natukaay bi");
   LSTR MSG_BED_TRAMMING_IN_RANGE          = _UxGT("Kawewaayu ruqu yi jaadu na");
+  LSTR MSG_BED_TRAMMING_GOOD_POINTS       = _UxGT("Tomb yu baax: ");
+  LSTR MSG_BED_TRAMMING_LAST_Z            = _UxGT("Z bu mujj: ");
   LSTR MSG_NEXT_CORNER                    = _UxGT("Ruqu wi ci topp");
   LSTR MSG_MESH_EDITOR                    = _UxGT("Soppi rabb bi"); // 13 car. max
   LSTR MSG_EDIT_MESH                      = _UxGT("Soppi rëd yi");
+  LSTR MSG_MESH_VIEW                      = _UxGT("Xool rabb bi");
   LSTR MSG_EDITING_STOPPED                = _UxGT("Dakkal na ñu coppite yi");
   LSTR MSG_PROBING_POINT                  = _UxGT("Natt tomb");
   LSTR MSG_MESH_X                         = _UxGT("Alluwa tur X");
@@ -128,30 +158,27 @@ namespace Language_wo {
   LSTR MSG_MESH_EDIT_Z                    = _UxGT("Xayma Z");
   LSTR MSG_CUSTOM_COMMANDS                = _UxGT("Samay ndigel");
 
-  LSTR MSG_LCD_TILTING_MESH               = _UxGT("Natt tomb");
+  LSTR MSG_LCD_TILTING_MESH               = _UxGT("Wéngal rabb");
   LSTR MSG_M48_TEST                       = _UxGT("Diggante natukaay Z M48");
-  LSTR MSG_M48_DEVIATION                  = _UxGT("Diggante");
   LSTR MSG_M48_POINT                      = _UxGT("Tomb M48");
+  LSTR MSG_M48_OUT_OF_BOUNDS              = _UxGT("Nattukaay bi dafa romb");
+  LSTR MSG_M48_DEVIATION                  = _UxGT("Diggante");
   LSTR MSG_IDEX_MENU                      = _UxGT("Anam IDEX");
+  LSTR MSG_OFFSETS_MENU                   = _UxGT("Jumtukaayu randal");
   LSTR MSG_IDEX_MODE_AUTOPARK             = _UxGT("Fatul boppam");
   LSTR MSG_IDEX_MODE_DUPLICATE            = _UxGT("Seexal");
   LSTR MSG_IDEX_MODE_MIRRORED_COPY        = _UxGT("Seexalu seetu");
   LSTR MSG_IDEX_MODE_FULL_CTRL            = _UxGT("Saytu bu mat");
-  LSTR MSG_OFFSETS_MENU                   = _UxGT("Jumtukaayu randal");
+  LSTR MSG_IDEX_DUPE_GAP                  = _UxGT("Séexal kambu X");
   LSTR MSG_HOTEND_OFFSET_X                = _UxGT("Xélikaay 2 X");
   LSTR MSG_HOTEND_OFFSET_Y                = _UxGT("Xélikaay 2 Y");
   LSTR MSG_HOTEND_OFFSET_Z                = _UxGT("Xélikaay 2 Z");
-  LSTR MSG_G26_HEATING_BED                = _UxGT("G26: Tangal lal bi");
-  LSTR MSG_G26_HEATING_NOZZLE             = _UxGT("Xélikaay baa ngi tang...");
-  LSTR MSG_G26_MANUAL_PRIME               = _UxGT("Tambalik loxo...");
-  LSTR MSG_G26_FIXED_LENGTH               = _UxGT("Tambalik guddaay bu dul soppiku");
-  LSTR MSG_G26_PRIME_DONE                 = _UxGT("Tambali gi jeex na");
-  LSTR MSG_G26_CANCELED                   = _UxGT("Dakkal na ñu G26 bi");
-  LSTR MSG_G26_LEAVING                    = _UxGT("Gennë G26");
   LSTR MSG_UBL_DOING_G29                  = _UxGT("G29 baa ngi dox");
   LSTR MSG_UBL_TOOLS                      = _UxGT("Jumtukaayi UBL");
   LSTR MSG_UBL_LEVEL_BED                  = _UxGT("Lal bi jub na");
+  LSTR MSG_LCD_TILTING_MESH               = _UxGT("Tombu wéngal");
   LSTR MSG_UBL_MANUAL_MESH                = _UxGT("Rabbuk loxo");
+  LSTR MSG_UBL_MESH_WIZARD                = _UxGT("Dimbalikaay rabb UBL");
   LSTR MSG_UBL_BC_INSERT                  = _UxGT("Teg xeer te natt");
   LSTR MSG_UBL_BC_INSERT2                 = _UxGT("Natt");
   LSTR MSG_UBL_BC_REMOVE                  = _UxGT("Dindin te natt lal bi");
@@ -166,12 +193,14 @@ namespace Language_wo {
   LSTR MSG_UBL_EDIT_CUSTOM_MESH           = _UxGT("Soppi samay rëd");
   LSTR MSG_UBL_FINE_TUNE_MESH             = _UxGT("Jagal bu ñaw");
   LSTR MSG_UBL_DONE_EDITING_MESH          = _UxGT("Jeexal");
+  LSTR MSG_UBL_BUILD_CUSTOM_MESH          = _UxGT("Fent rëd ...");
   LSTR MSG_UBL_BUILD_MESH_MENU            = _UxGT("Fent rëd yi");
+
   #if PREHEAT_COUNT
     LSTR MSG_UBL_BUILD_MESH_M             = _UxGT("Fent rëd $");
     LSTR MSG_UBL_VALIDATE_MESH_M          = _UxGT("Móol rëd yi$");
   #endif
-  LSTR MSG_UBL_BUILD_CUSTOM_MESH          = _UxGT("Fent rëd ...");
+
   LSTR MSG_UBL_BUILD_COLD_MESH            = _UxGT("Natt si seddaay");
   LSTR MSG_UBL_MESH_HEIGHT_ADJUST         = _UxGT("Jagal kawewaayu der wi");
   LSTR MSG_UBL_MESH_HEIGHT_AMOUNT         = _UxGT("Kawewaay (x0.1mm)");
@@ -179,6 +208,13 @@ namespace Language_wo {
   LSTR MSG_UBL_VALIDATE_CUSTOM_MESH       = _UxGT("Móol rëd yi ...");
   LSTR MSG_UBL_CONTINUE_MESH              = _UxGT("Yeggali rëd yi");
   LSTR MSG_UBL_MESH_LEVELING              = _UxGT("Këru rabb");
+  LSTR MSG_G26_HEATING_BED                = _UxGT("G26: Tangal lal bi");
+  LSTR MSG_G26_HEATING_NOZZLE             = _UxGT("Xélikaay baa ngi tang...");
+  LSTR MSG_G26_MANUAL_PRIME               = _UxGT("Tambalik loxo...");
+  LSTR MSG_G26_FIXED_LENGTH               = _UxGT("Tambalik guddaay bu dul soppiku");
+  LSTR MSG_G26_PRIME_DONE                 = _UxGT("Tambali gi jeex na");
+  LSTR MSG_G26_CANCELED                   = _UxGT("Dakkal na ñu G26 bi");
+  LSTR MSG_G26_LEAVING                    = _UxGT("Gennë G26");
   LSTR MSG_UBL_3POINT_MESH_LEVELING       = _UxGT("Këru 3 tomb");
   LSTR MSG_UBL_GRID_MESH_LEVELING         = _UxGT("Këru rëd yi");
   LSTR MSG_UBL_MESH_LEVEL                 = _UxGT("Natt");
@@ -229,6 +265,10 @@ namespace Language_wo {
   LSTR MSG_SET_LEDS_VIOLET                = _UxGT("Yolet");
   LSTR MSG_SET_LEDS_WHITE                 = _UxGT("Weex");
   LSTR MSG_SET_LEDS_DEFAULT               = _UxGT("Defaut");
+  LSTR MSG_LED_CHANNEL_N                  = _UxGT("Yoon =");
+  LSTR MSG_LEDS2                          = _UxGT("Léer yi #2");
+  LSTR MSG_NEO2_PRESETS                   = _UxGT("Tëralini léer #2");
+  LSTR MSG_NEO2_BRIGHTNESS                = _UxGT("Léeraay");
   LSTR MSG_CUSTOM_LEDS                    = _UxGT("Samay LED");
   LSTR MSG_INTENSITY_R                    = _UxGT("Leeraayu xonq");
   LSTR MSG_INTENSITY_G                    = _UxGT("Leeraayu nëtëx");
@@ -257,17 +297,32 @@ namespace Language_wo {
   LSTR MSG_MOVE_01IN                      = _UxGT("Toxal 0.1\"");
   LSTR MSG_MOVE_1IN                       = _UxGT("Toxal 1\"");
   LSTR MSG_SPEED                          = _UxGT("Gaawaay");
+  LSTR MSG_MAXSPEED                       = _UxGT("Xiir gi gëna gaaw (mm/s)");
+  LSTR MSG_MAXSPEED_X                     = _UxGT("Xiir gi") LCD_STR_A _UxGT(" ëpp");
+  LSTR MSG_MAXSPEED_Y                     = _UxGT("Xiir gi") LCD_STR_B _UxGT(" ëpp");
+  LSTR MSG_MAXSPEED_Z                     = _UxGT("Xiir gi") LCD_STR_C _UxGT(" ëpp");
+  LSTR MSG_MAXSPEED_E                     = _UxGT("Xiir gi") LCD_STR_E _UxGT("ëpp");
   LSTR MSG_BED_Z                          = _UxGT("Lal Z");
   LSTR MSG_NOZZLE                         = _UxGT("Xélikaay bi"); //****
   LSTR MSG_NOZZLE_N                       = _UxGT("Xélikaay ~");
+  LSTR MSG_NOZZLE_PARKED                  = _UxGT("Xélikaay bi fatu na");
+  LSTR MSG_NOZZLE_STANDBY                 = _UxGT("Xélikaay ba ngi xaar");
   LSTR MSG_BED                            = _UxGT("Lal bi");  //****
   LSTR MSG_CHAMBER                        = _UxGT("Boyet");
+  LSTR MSG_COOLER                         = _UxGT("Seralukaayu Laser");
+  LSTR MSG_COOLER_TOGGLE                  = _UxGT("Wëlbati seralukaay");
+  LSTR MSG_FLOWMETER_SAFETY               = _UxGT("Kaaraange yebeef");
+  LSTR MSG_LASER                          = _UxGT("Laser");
   LSTR MSG_FAN_SPEED                      = _UxGT("Gaawaay ëpukaay"); // 15 car. max
   LSTR MSG_FAN_SPEED_N                    = _UxGT("Gaaw. ëpukaay.~");
   LSTR MSG_STORED_FAN_N                   = _UxGT("Gaaw. bi dencu~");
   LSTR MSG_EXTRA_FAN_SPEED                = _UxGT("Beneen ëpukaay ");
   LSTR MSG_EXTRA_FAN_SPEED_N              = _UxGT("Beneen ëpukaay~");
-
+  LSTR MSG_CONTROLLER_FAN                 = _UxGT("Uppukaay");
+  LSTR MSG_CONTROLLER_FAN_IDLE_SPEED      = _UxGT("Idle Speed");
+  LSTR MSG_CONTROLLER_FAN_AUTO_ON         = _UxGT("Anamu boppam);
+  LSTR MSG_CONTROLLER_FAN_SPEED           = _UxGT("Active Speed");
+  LSTR MSG_CONTROLLER_FAN_DURATION        = _UxGT("Idle Period");
   LSTR MSG_FLOW                           = _UxGT("Yebeef");
   LSTR MSG_FLOW_N                         = _UxGT("Yebeef~");
   LSTR MSG_CONTROL                        = _UxGT("Saytu");
@@ -279,6 +334,7 @@ namespace Language_wo {
   LSTR MSG_LCD_OFF                        = _UxGT("Fey na");
   LSTR MSG_PID_AUTOTUNE                   = _UxGT("PID jagal boppam ");
   LSTR MSG_PID_AUTOTUNE_E                 = _UxGT("PID jagal boppam *");
+  LSTR MSG_PID_CYCLE                      = _UxGT("Wërngëlu PID");
   LSTR MSG_PID_AUTOTUNE_DONE              = _UxGT("PID jagal boppam pare na");
   LSTR MSG_PID_BAD_EXTRUDER_NUM           = _UxGT("PID jagal boppam doxul! E baaxul");
   LSTR MSG_PID_TEMP_TOO_HIGH              = _UxGT("PID jagal boppam doxul! tanggoor gi dafa ëpp");
@@ -294,6 +350,7 @@ namespace Language_wo {
   LSTR MSG_VJ_JERK                        = _UxGT("V") LCD_STR_J _UxGT(" yëngëtu");
   LSTR MSG_VK_JERK                        = _UxGT("V") LCD_STR_K _UxGT(" yëngëtu");
   LSTR MSG_VE_JERK                        = _UxGT("Ve yëngëtu");
+  LSTR MSG_JUNCTION_DEVIATION             = _UxGT("Jàddaayu jokk-jokk");
   LSTR MSG_VELOCITY                       = _UxGT("Gaawaay");
   LSTR MSG_VMAX_A                         = _UxGT("Gën gaaw ") LCD_STR_A;
   LSTR MSG_VMAX_B                         = _UxGT("Gën gaaw ") LCD_STR_B;
@@ -303,7 +360,6 @@ namespace Language_wo {
   LSTR MSG_VMAX_K                         = _UxGT("Gën gaaw ") LCD_STR_K;
   LSTR MSG_VMAX_E                         = _UxGT("Gën gaaw ") LCD_STR_E;
   LSTR MSG_VMAX_EN                        = _UxGT("Gën gaaw *");
-  LSTR MSG_JUNCTION_DEVIATION             = _UxGT("Jàddaayu jokk-jokk");
   LSTR MSG_VMIN                           = _UxGT("Gëna yeex");
   LSTR MSG_VTRAV_MIN                      = _UxGT("Daw gi gëna yeex");
   LSTR MSG_ACCELERATION                   = _UxGT("Xiir");
@@ -340,12 +396,15 @@ namespace Language_wo {
   LSTR MSG_FILAMENT_LOAD                  = _UxGT("Roof mm");
   LSTR MSG_ADVANCE_K                      = _UxGT("Jëmal kanam K");
   LSTR MSG_ADVANCE_K_E                    = _UxGT("Jëmal kanam K *");
-  LSTR MSG_BRIGHTNESS                     = _UxGT("Leeraayu LCD");
   LSTR MSG_CONTRAST                       = _UxGT("Lëndëmaayu LCD");
+  LSTR MSG_BRIGHTNESS                     = _UxGT("Leeraayu LCD");
   LSTR MSG_STORE_EEPROM                   = _UxGT("Denc tëralin");
   LSTR MSG_LOAD_EEPROM                    = _UxGT("Yeb tëralin");
   LSTR MSG_RESTORE_DEFAULTS               = _UxGT("Tëgaat bu bées");
   LSTR MSG_INIT_EEPROM                    = _UxGT("Tëgaat EEPROM bi");
+  LSTR MSG_ERR_EEPROM_CRC                 = _UxGT("Jnumte EEPROM CRC");
+  LSTR MSG_ERR_EEPROM_INDEX               = _UxGT("Njumte alluwa EEPROM");
+  LSTR MSG_ERR_EEPROM_VERSION             = _UxGT("Njumte xétu EEPROM");
   LSTR MSG_SETTINGS_STORED                = _UxGT("Denc na ñu tëralin yi");
   LSTR MSG_MEDIA_UPDATE                   = _UxGT("Yeesal losisel SD");
   LSTR MSG_RESET_PRINTER                  = _UxGT("Yeesal móolukaay");
@@ -353,6 +412,10 @@ namespace Language_wo {
   LSTR MSG_INFO_SCREEN                    = _UxGT("Xëtu wottu");
   LSTR MSG_PREPARE                        = _UxGT("Waajal");
   LSTR MSG_TUNE                           = _UxGT("Jagal");
+  LSTR MSG_POWER_MONITOR                  = _UxGT("Wottukaayu kattan");
+  LSTR MSG_CURRENT                        = _UxGT("Mbëj");
+  LSTR MSG_VOLTAGE                        = _UxGT("Doole");
+  LSTR MSG_POWER                          = _UxGT("Kattan");
   LSTR MSG_START_PRINT                    = _UxGT("Tambali móol");
   LSTR MSG_BUTTON_NEXT                    = _UxGT("Bi ci topp");
   LSTR MSG_BUTTON_INIT                    = _UxGT("Doortal");
@@ -368,7 +431,9 @@ namespace Language_wo {
   LSTR MSG_PAUSING                        = _UxGT("Xaarandi...");
   LSTR MSG_PAUSE_PRINT                    = _UxGT("Xaarandi móol");
   LSTR MSG_RESUME_PRINT                   = _UxGT("Yeggali móol");
+  LSTR MSG_HOST_START_PRINT               = _UxGT("Tambali móol"bu sori);
   LSTR MSG_STOP_PRINT                     = _UxGT("Bayyi móol");
+  LSTR MSG_END_LOOPS                      = _UxGT("Jeexitu wëndéelu yi");
   LSTR MSG_PRINTING_OBJECT                = _UxGT("Móol këf");
   LSTR MSG_CANCEL_OBJECT                  = _UxGT("Bayyi këf");
   LSTR MSG_CANCEL_OBJECT_N                = _UxGT("Bayyi këf =");
@@ -380,6 +445,7 @@ namespace Language_wo {
   LSTR MSG_PRINT_PAUSED                   = _UxGT("Móol baa ngi xaarandi");
   LSTR MSG_PRINTING                       = _UxGT("Móol");
   LSTR MSG_PRINT_ABORTED                  = _UxGT("Bayyi na ñu móol bi");
+  LSTR MSG_PRINT_DONE                     = _UxGT("Pare na móol);
   LSTR MSG_NO_MOVE                        = _UxGT("Jumtukaayu yi da ñoo taxaw");
   LSTR MSG_KILLED                         = _UxGT("Bayyi");
   LSTR MSG_STOPPED                        = _UxGT("Taxawal");
@@ -392,6 +458,9 @@ namespace Language_wo {
   LSTR MSG_CONTROL_RETRACT_RECOVERF       = _UxGT("Gaawaay dellu ginnaaw yeggali");
   LSTR MSG_CONTROL_RETRACT_RECOVER_SWAPF  = _UxGT("Gaawaay laju Dellu ginnaaw yeggali");
   LSTR MSG_AUTORETRACT                    = _UxGT("Dellul boppam ginnaaw");
+  LSTR MSG_FILAMENT_SWAP_LENGTH           = _UxGT("Guddaayu coppite");
+  LSTR MSG_FILAMENT_SWAP_EXTRA            = _UxGT("Yok coppite");
+  LSTR MSG_FILAMENT_PURGE_LENGTH          = _UxGT("Guddayu tuur");
   LSTR MSG_TOOL_CHANGE                    = _UxGT("Soppi jumtukaay");
   LSTR MSG_TOOL_CHANGE_ZLIFT              = _UxGT("Dolli Z");
   LSTR MSG_SINGLENOZZLE_PRIME_SPEED       = _UxGT("Xiir gu jiitu");
@@ -406,10 +475,6 @@ namespace Language_wo {
   LSTR MSG_TOOL_MIGRATION_AUTO            = _UxGT("Toxalu yeesalu boppam");
   LSTR MSG_TOOL_MIGRATION_END             = _UxGT("Buuxukaay bu mujj");
   LSTR MSG_TOOL_MIGRATION_SWAP            = _UxGT("Toxalu yeesal ca *");
-  LSTR MSG_NOZZLE_STANDBY                 = _UxGT("Xaar xélikaay");
-  LSTR MSG_FILAMENT_SWAP_LENGTH           = _UxGT("Guddaayu dellu ginnaaw");
-  LSTR MSG_FILAMENT_SWAP_EXTRA            = _UxGT("Dolli guddaay");
-  LSTR MSG_FILAMENT_PURGE_LENGTH          = _UxGT("Guddaayu tuur");
   LSTR MSG_FILAMENTCHANGE                 = _UxGT("Soppi buum");
   LSTR MSG_FILAMENTCHANGE_E               = _UxGT("Soppi buum *");
   LSTR MSG_FILAMENTLOAD                   = _UxGT("Roof buum");
@@ -434,6 +499,7 @@ namespace Language_wo {
   LSTR MSG_BLTOUCH_MODE_STORE_5V          = _UxGT("Yobbu 5V");
   LSTR MSG_BLTOUCH_MODE_STORE_OD          = _UxGT("Yobbu OD");
   LSTR MSG_BLTOUCH_MODE_ECHO              = _UxGT("Jëfe anam");
+  LSTR MSG_BLTOUCH_MODE_CHANGE            = _UxGT("ARTU: Tëralin yu baaxul mën na yad ! Da nga yeggali?");
   LSTR MSG_TOUCHMI_PROBE                  = _UxGT("TouchMI");
   LSTR MSG_TOUCHMI_INIT                   = _UxGT("Doortal TouchMI");
   LSTR MSG_TOUCHMI_ZTEST                  = _UxGT("Jeem randalu Z");
@@ -442,10 +508,12 @@ namespace Language_wo {
   LSTR MSG_MANUAL_DEPLOY                  = _UxGT("Génnee natukaayu Z");
   LSTR MSG_MANUAL_STOW                    = _UxGT("Delloo natukaayu Z");
   LSTR MSG_HOME_FIRST                     = _UxGT("Kër %s%s%s jiitu");
+  LSTR MSG_ZPROBE_SETTINGS                = _UxGT("Tëralinou natt gi");
   LSTR MSG_ZPROBE_OFFSETS                 = _UxGT("Barabu natukaayu Z");
   LSTR MSG_ZPROBE_XOFFSET                 = _UxGT("Randal X");
   LSTR MSG_ZPROBE_YOFFSET                 = _UxGT("Randal Y");
   LSTR MSG_ZPROBE_ZOFFSET                 = _UxGT("Randal Z");
+  LSTR MSG_MOVE_NOZZLE_TO_BED             = _UxGT("Yobu nattukaay bi si lal bi");
   LSTR MSG_BABYSTEP_X                     = _UxGT("Jéego bu ndaw X");
   LSTR MSG_BABYSTEP_Y                     = _UxGT("Jéego bu ndaw  Y");
   LSTR MSG_BABYSTEP_Z                     = _UxGT("Jéego bu ndaw  Z");
@@ -457,15 +525,14 @@ namespace Language_wo {
   LSTR MSG_HEATING_FAILED_LCD             = _UxGT("Njumte tangal");
   LSTR MSG_ERR_REDUNDANT_TEMP             = _UxGT("Njumte tanggoor guy wëndelu");
   LSTR MSG_THERMAL_RUNAWAY                = _UxGT("Njumte tanggoor");
+  LSTR MSG_THERMAL_RUNAWAY_BED            = _UxGT("TANGGAAYU LAL BI EPP NA");
+  LSTR MSG_THERMAL_RUNAWAY_CHAMBER        = _UxGT("TANGGAAYU NEEK BI EPP NA");
+  LSTR MSG_THERMAL_RUNAWAY_COOLER         = _UxGT("Serral bi ëpp na");
+  LSTR MSG_COOLING_FAILED                 = _UxGT("Serralukaay bi doxul");
   LSTR MSG_ERR_MAXTEMP                    = _UxGT("Njumte tanggoor bi ëpp");
   LSTR MSG_ERR_MINTEMP                    = _UxGT("Njumte tanggoor bi yés");
-
   LSTR MSG_HALTED                         = _UxGT("Móol gi taxaw na");
   LSTR MSG_PLEASE_RESET                   = _UxGT("Yeesalaatal ngi Yalla");
-  LSTR MSG_SHORT_DAY                      = _UxGT("j"); // One character only
-  LSTR MSG_SHORT_HOUR                     = _UxGT("h"); // One character only
-  LSTR MSG_SHORT_MINUTE                   = _UxGT("m"); // One character only
-
   LSTR MSG_HEATING                        = _UxGT("Tangal");
   LSTR MSG_COOLING                        = _UxGT("Seddal");
   LSTR MSG_BED_HEATING                    = _UxGT("Lal baa ngi tang...");
@@ -474,6 +541,7 @@ namespace Language_wo {
   LSTR MSG_PROBE_COOLING                  = _UxGT("Seralu lambukaay bi...");
   LSTR MSG_CHAMBER_HEATING                = _UxGT("Tangalu boyet bi...");
   LSTR MSG_CHAMBER_COOLING                = _UxGT("Seralu boyet bi...");
+  LSTR MSG_LASER_COOLING                  = _UxGT("Laser Cooling...");
   LSTR MSG_DELTA_CALIBRATE                = _UxGT("Jubal Delta");
   LSTR MSG_DELTA_CALIBRATE_X              = _UxGT("Jubal X");
   LSTR MSG_DELTA_CALIBRATE_Y              = _UxGT("Jubal Y");
@@ -486,7 +554,6 @@ namespace Language_wo {
   LSTR MSG_DELTA_DIAG_ROD                 = _UxGT("Diagonale");
   LSTR MSG_DELTA_HEIGHT                   = _UxGT("Kawewaay");
   LSTR MSG_DELTA_RADIUS                   = _UxGT("Rayon");
-
   LSTR MSG_INFO_MENU                      = _UxGT("Xibaari móolukaay bi");
   LSTR MSG_INFO_PRINTER_MENU              = _UxGT("Xibaari móolukaay bi");
   LSTR MSG_3POINT_LEVELING                = _UxGT("Këru 3 tomb");
@@ -534,9 +601,8 @@ namespace Language_wo {
   LSTR MSG_DAC_PERCENT_J                  = _UxGT("Gindikaay ") LCD_STR_J _UxGT(" %");
   LSTR MSG_DAC_PERCENT_K                  = _UxGT("Gindikaay ") LCD_STR_K _UxGT(" %");
   LSTR MSG_DAC_PERCENT_E                  = _UxGT("Gindikaay E %");
-  LSTR MSG_DAC_EEPROM_WRITE               = _UxGT("Denc na DAC EEPROM");
   LSTR MSG_ERROR_TMC                      = _UxGT("Njumte jokkoo TMC");
-
+  LSTR MSG_DAC_EEPROM_WRITE               = _UxGT("Denc na DAC EEPROM");
   LSTR MSG_FILAMENT_CHANGE_HEADER         = _UxGT("SOPPI BUUM");
   LSTR MSG_FILAMENT_CHANGE_HEADER_PAUSE   = _UxGT("MOOL GI DAFA TAXAWANDI");
   LSTR MSG_FILAMENT_CHANGE_HEADER_LOAD    = _UxGT("ROOF BUUM");
@@ -546,12 +612,14 @@ namespace Language_wo {
   LSTR MSG_FILAMENT_CHANGE_OPTION_RESUME  = _UxGT("Yeggali móol");
   LSTR MSG_FILAMENT_CHANGE_NOZZLE         = _UxGT("  xélikaay: ");
   LSTR MSG_RUNOUT_SENSOR                  = _UxGT("Laambukaayu buum");
+  LSTR MSG_RUNOUT_DISTANCE_MM             = _UxGT("Runout Dist mm");
+  LSTR MSG_RUNOUT_ENABLE                  = _UxGT("Enable Runout");
   LSTR MSG_KILL_HOMING_FAILED             = _UxGT("Kër gi baaxul");
   LSTR MSG_LCD_PROBING_FAILED             = _UxGT("Nattukaay bi doxul");
 
-  LSTR MSG_KILL_MMU2_FIRMWARE             = _UxGT("Yeesal losisel MMU!!");
   LSTR MSG_MMU2_CHOOSE_FILAMENT_HEADER    = _UxGT("TANN BUUM");
   LSTR MSG_MMU2_MENU                      = _UxGT("MMU");
+  LSTR MSG_KILL_MMU2_FIRMWARE             = _UxGT("Yeesal losisel MMU!!");
   LSTR MSG_MMU2_NOT_RESPONDING            = _UxGT("MMU bi tontootul");
   LSTR MSG_MMU2_RESUME                    = _UxGT("Yeggali móol MMU");
   LSTR MSG_MMU2_RESUMING                  = _UxGT("Yeggali MMU...");
@@ -570,6 +638,7 @@ namespace Language_wo {
   LSTR MSG_MMU2_RESETTING                 = _UxGT("Dolli MMU...");
   LSTR MSG_MMU2_EJECT_RECOVER             = _UxGT("Rocci, cuq");
 
+  LSTR MSG_MIX                            = _UxGT("Mix");
   LSTR MSG_MIX_COMPONENT_N                = _UxGT("Yokk =");
   LSTR MSG_MIXER                          = _UxGT("Jambukaay");
   LSTR MSG_GRADIENT                       = _UxGT("Sopeeku wëyale");
@@ -587,6 +656,7 @@ namespace Language_wo {
   LSTR MSG_VTOOLS_RESET                   = _UxGT("Doortal jumtukaayi-V baax na");
   LSTR MSG_START_Z                        = _UxGT("Tambali Z:");
   LSTR MSG_END_Z                          = _UxGT("  Jeexitu Z:");
+
   LSTR MSG_GAMES                          = _UxGT("Po");
   LSTR MSG_BRICKOUT                       = _UxGT("Toj xeer");
   LSTR MSG_INVADERS                       = _UxGT("Doxandeem");
@@ -595,6 +665,21 @@ namespace Language_wo {
 
   LSTR MSG_BAD_PAGE                       = _UxGT("Njumte alluwa xët");
   LSTR MSG_BAD_PAGE_SPEED                 = _UxGT("Njumte xiiru xët");
+
+  LSTR MSG_EDIT_PASSWORD                  = _UxGT("Duggal caabi");
+  LSTR MSG_LOGIN_REQUIRED                 = _UxGT("Dafa laaj nga lëkkaloo");
+  LSTR MSG_PASSWORD_SETTINGS              = _UxGT("Tëralinu caabi);
+  LSTR MSG_ENTER_DIGIT                    = _UxGT("Duggalal araf yi");
+  LSTR MSG_CHANGE_PASSWORD                = _UxGT("Tëral/bind caabi");
+  LSTR MSG_REMOVE_PASSWORD                = _UxGT("Dindi caabi");
+  LSTR MSG_PASSWORD_SET                   = _UxGT("Caabi bi mooy ");
+  LSTR MSG_START_OVER                     = _UxGT("Tambaliaat");
+  LSTR MSG_REMINDER_SAVE_SETTINGS         = _UxGT("Bul fatte denc!");
+  LSTR MSG_PASSWORD_REMOVED               = _UxGT("Caabi bi dindéeku na");
+
+  //
+  // Filament Change screens show up to 3 lines on a 4-line display
+  //                        ...or up to 2 lines on a 3-line display
 
   #if LCD_HEIGHT >= 4
     // Up to 3 lines allowed
@@ -612,6 +697,7 @@ namespace Language_wo {
   #else // LCD_HEIGHT < 4
     // Up to 2 lines allowed
     LSTR MSG_ADVANCED_PAUSE_WAITING       = _UxGT(MSG_1_LINE("Cuqal ngir tambali"));
+    LSTR MSG_PAUSE_PRINT_PARKING          = _UxGT(MSG_1_LINE("Fatu..."));
     LSTR MSG_FILAMENT_CHANGE_INIT         = _UxGT(MSG_1_LINE("Xaaral..."));
     LSTR MSG_FILAMENT_CHANGE_INSERT       = _UxGT(MSG_1_LINE("Roof buum"));
     LSTR MSG_FILAMENT_CHANGE_HEAT         = _UxGT(MSG_1_LINE("Tangal ?"));
@@ -623,6 +709,7 @@ namespace Language_wo {
     LSTR MSG_FILAMENT_CHANGE_RESUME       = _UxGT(MSG_1_LINE("Tambaliaat..."));
   #endif // LCD_HEIGHT < 4
 
+  LSTR MSG_TMC_DRIVERS                    = _UxGT("Gindikaayu TMC");
   LSTR MSG_TMC_CURRENT                    = _UxGT("Mbëju gindikaay");
   LSTR MSG_TMC_HYBRID_THRS                = _UxGT("Yemuwaay bu jaxasoo");   //Seuil hybride
   LSTR MSG_TMC_HOMING_THRS                = _UxGT("Kër gu anduk ak natukaay");
@@ -630,6 +717,7 @@ namespace Language_wo {
   LSTR MSG_TMC_STEALTH_ENABLED            = _UxGT("StealthChop bi taak na");
   LSTR MSG_SERVICE_RESET                  = _UxGT("Doortal");
   LSTR MSG_SERVICE_IN                     = _UxGT("  ci:");
+  LSTR MSG_BACKLASH                       = _UxGT("Backlash");
   LSTR MSG_BACKLASH_CORRECTION            = _UxGT("Gàgganti");
   LSTR MSG_BACKLASH_SMOOTHING             = _UxGT("Ritaxal");
 
@@ -642,6 +730,7 @@ namespace Language_wo {
   #endif
   LSTR MSG_REHEAT                         = _UxGT("Tangal");
   LSTR MSG_REHEATING                      = _UxGT("Tangalaat...");
+  LSTR MSG_REHEATDONE                     = _UxGT("Tangalaati bi pare na");
 
   LSTR MSG_PROBE_WIZARD                   = _UxGT("Jappalekaay natukaayu Z");
   LSTR MSG_PROBE_WIZARD_PROBING           = _UxGT("Natt féetewaayu");
@@ -656,6 +745,40 @@ namespace Language_wo {
   LSTR MSG_CALIBRATION_COMPLETED          = _UxGT("Jagal gi jeex na");
   LSTR MSG_CALIBRATION_FAILED             = _UxGT("Jagal gi baaxul");
 
+  LSTR MSG_DRIVER_BACKWARD                = _UxGT(" driver backward");
+
   LSTR MSG_SD_CARD                        = _UxGT("Kart SD");
   LSTR MSG_USB_DISK                       = _UxGT("Kale USB");
+
+  // These strings can be the same in all languages
+  LSTR MSG_MARLIN                         = _UxGT("Marlin");
+  LSTR MSG_SHORT_DAY                      = _UxGT("b"); // One character only
+  LSTR MSG_SHORT_HOUR                     = _UxGT("w"); // One character only
+  LSTR MSG_SHORT_MINUTE                   = _UxGT("m"); // One character only
+  LSTR MSG_PID_P                          = _UxGT("PID-P");
+  LSTR MSG_PID_P_E                        = _UxGT("PID-P *");
+  LSTR MSG_PID_I                          = _UxGT("PID-I");
+  LSTR MSG_PID_I_E                        = _UxGT("PID-I *");
+  LSTR MSG_PID_D                          = _UxGT("PID-D");
+  LSTR MSG_PID_D_E                        = _UxGT("PID-D *");
+  LSTR MSG_PID_C                          = _UxGT("PID-C");
+  LSTR MSG_PID_C_E                        = _UxGT("PID-C *");
+  LSTR MSG_PID_F                          = _UxGT("PID-F");
+  LSTR MSG_PID_F_E                        = _UxGT("PID-F *");
+  LSTR MSG_BACKLASH_A                     = LCD_STR_A;
+  LSTR MSG_BACKLASH_B                     = LCD_STR_B;
+  LSTR MSG_BACKLASH_C                     = LCD_STR_C;
+  LSTR MSG_BACKLASH_I                     = LCD_STR_I;
+  LSTR MSG_BACKLASH_J                     = LCD_STR_J;
+  LSTR MSG_BACKLASH_K                     = LCD_STR_K;
+
+  LSTR MSG_FILAMENT_SWAP_LENGTH           = _UxGT("Guddaayu dellu ginnaaw");
+  LSTR MSG_FILAMENT_SWAP_EXTRA            = _UxGT("Dolli guddaay");
+  LSTR MSG_FILAMENT_PURGE_LENGTH          = _UxGT("Guddaayu tuur");
+  LSTR MSG_NOZZLE_STANDBY                 = _UxGT("Xaar xélikaay");
+
+  LSTR MSG_SHORT_DAY                      = _UxGT("j"); // One character only
+  LSTR MSG_SHORT_HOUR                     = _UxGT("h"); // One character only
+  LSTR MSG_SHORT_MINUTE                   = _UxGT("m"); // One character only
+
 }
